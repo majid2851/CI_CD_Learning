@@ -1,6 +1,5 @@
 package com.majid2851.ci_cd_learning
 
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -10,3 +9,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
+
+// Add a newline at the end of the file
