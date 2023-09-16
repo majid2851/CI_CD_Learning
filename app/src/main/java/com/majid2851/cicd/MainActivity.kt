@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
           mag()
     }
-    fun mag()
+    fun mag(6)
     {
                               System.out.println()
 
