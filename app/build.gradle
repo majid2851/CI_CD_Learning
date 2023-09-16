@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace 'com.majid2851.ci_cd_learning'
+    namespace 'com.majid2851.cicd'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.majid2851.ci_cd_learning"
+        applicationId "com.majid2851.cicd"
         minSdk 26
         targetSdk 33
         versionCode 1
