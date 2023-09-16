@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 //    id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
     id("io.gitlab.arturbosch.detekt") version "1.19.0"
+    id 'com.google.firebase.appdistribution'
+    id 'com.google.gms.google-services'
 
 }
 
@@ -21,9 +23,21 @@ android {
     }
 
     buildTypes {
+        debug{
+            firebaseAppDistribution {
+                releaseNotesFile="/path/to/releasenotes.txt"
+                testers="majidbagheri2851@gmail.com"
+            }
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            firebaseAppDistribution {
+                releaseNotesFile="/path/to/releasenotes.txt"
+                testers="majidbagheri2851@gmail.com"
+            }
+
         }
     }
     compileOptions {
@@ -33,6 +47,25 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    flavorDimensions "version"
+    productFlavors {
+        demo {
+            dimension "version"
+            firebaseAppDistribution {
+                releaseNotes="Release notes for demo version"
+                testers="majidbagheri2851@gmail.com"
+            }
+        }
+        full {
+            dimension "version"
+            firebaseAppDistribution {
+                releaseNotes="Release notes for full version"
+                testers="majidbagheri2851@gmail.com"
+            }
+        }
+    }
+
 }
 
 dependencies {
