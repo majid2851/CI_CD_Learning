@@ -11,4 +11,3 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-// Add a newline at the end of the file
