@@ -48,23 +48,23 @@ android {
         jvmTarget = '1.8'
     }
 
-    flavorDimensions "version"
-    productFlavors {
-        demo {
-            dimension "version"
-            firebaseAppDistribution {
-                releaseNotes="Release notes for demo version"
-                testers="majidbagheri2851@gmail.com"
-            }
-        }
-        full {
-            dimension "version"
-            firebaseAppDistribution {
-                releaseNotes="Release notes for full version"
-                testers="majidbagheri2851@gmail.com"
-            }
-        }
-    }
+//    flavorDimensions "version"
+//    productFlavors {
+//        demo {
+//            dimension "version"
+//            firebaseAppDistribution {
+//                releaseNotes="Release notes for demo version"
+//                testers="majidbagheri2851@gmail.com"
+//            }
+//        }
+//        full {
+//            dimension "version"
+//            firebaseAppDistribution {
+//                releaseNotes="Release notes for full version"
+//                testers="majidbagheri2851@gmail.com"
+//            }
+//        }
+//    }
 
 }
 
