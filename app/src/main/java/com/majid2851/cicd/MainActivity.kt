@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun mag()
     {
-                            System.out.println()
+                              System.out.println()
 
     }
 }
